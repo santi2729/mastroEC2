@@ -4,7 +4,7 @@ const mysqlConnection = mysql.createConnection({
   host: 'database-1.cdvcjeyjbggm.us-east-1.rds.amazonaws.com',
   user: 'mastro',
   password: 'mastro2020',
-  database: 'tufast-1',
+  database: 'tufast',
   multipleStatements: true
 });
 
