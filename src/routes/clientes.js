@@ -38,7 +38,7 @@ router.delete('/:id', (req, res) => {
   });
 });
 
-// INSERT An Employee
+// INSERT An Cliente
 router.post("/", (req, res) => {
   const { Nombre, Apellido, Correo, password, DNI } = req.body;
   console.log(Nombre, Apellido, Correo, password, DNI);
