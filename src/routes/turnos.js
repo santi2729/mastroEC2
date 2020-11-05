@@ -15,7 +15,7 @@ router.get('/turnos', (req, res) => {
 });
 
 // GET An turnos
-router.get('/turnos/:id', (req, res) => {
+router.get('/turnos/especifico/:id', (req, res) => {
   const { id } = req.params; 
   mysqlConnection.query('SELECT * FROM turnos WHERE id_Cliente = ?', [id], (err, rows, fields) => {
     if (!err) {
