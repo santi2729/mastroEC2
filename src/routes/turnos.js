@@ -153,7 +153,7 @@ router.get('/turnos/red/:ID_Negocio', (req, res) => {
   //GET Ver el historial de turnos del Cliente
 router.get('/turnos/historialC/:ID_Cliente', (req, res) => {
   const  ID_Cliente  = req.params.ID_Cliente;
-  mysqlConnection.query('SELECT * FROM turnos WHERE Id_Cliente = ? ', [numero,ID_Cliente], (err, rows, fields) => {
+  mysqlConnection.query('SELECT * FROM turnos WHERE Id_Cliente = ? ', [ID_Cliente], (err, rows, fields) => {
     if(!err) {
       res.json(rows);
     } else {
